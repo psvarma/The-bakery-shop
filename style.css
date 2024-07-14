@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* font-family: "Caveat", cursive;  --- fancy font */
+body {
+    background-color: #fcfbf5;
+}
+img{
+    max-width: 100%;
+}
+.button{
+    background: #c39c5b;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+    color: white;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
+
+/* Header */
+#header {
+    padding: 2rem;
+    text-align: center;
+}
+#logo{
+    width:100px;
+    margin: 0 auto 1rem;
+}
+.nav{}
+.nav__link{
+    color: #000;
+    margin: 0 1rem;
+    text-decoration: none;
+    position: relative;
+}
+.nav__link:hover{
+    color: #c39c5b;
+}
+.nav__link:hover::after {
+    content: '';
+    background: #c39c5b;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+/* Main Content Area */
+.mainContainer {
+    padding: 1rem;
+}
+#banner1{
+    background: url('./images/banner.jpg')  center  no-repeat;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#banner1 > h2 {
+    font-size: 5rem;
+    color:white;
+    font-family: "Caveat", cursive;
+    margin-bottom: 2rem;
+    position: relative;
+}
+#banner1 > h2::before{
+    content: '';
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    bottom:-16px;
+    position: absolute;
+}
+#banner1 > h2::after{
+    content: '';
+    width:10vw;
+    height: 1px;
+    background-color: white;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    bottom:-12px;
+    position: absolute;
+}
+#banner1  button {
+    border: 2px solid white;
+    background: none;
+    width: 140px;
+}
+#banner1  button:hover {
+    background: white;
+    color:black;
+}
+div#specials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+}
+
+/* Offers */
+#banner2{
+    background: url('./images/spl_day_banner_2.jpg')  top right no-repeat;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+/* Deals */
+.deals__description{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.deals__description h4{
+    font-size: 1.8rem;
+    font-family: "Caveat", cursive;
+    color: #c39c5b;
+    font-weight: 600;
+}
+.deals__description h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.deals__description h2::before{
+    content: '';
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c39c5b;
+    left:0;
+    right: 0;
+    margin:0 auto;
+    bottom:-16px;
+    position: absolute;
+}
+.deals__description h2::after{
+    content: '';
+    width:10vw;
+    height: 1px;
+    background-color: #c39c5b;
+    left:0;
+    right: 0;
+    margin:0 auto;
+    bottom:-12px;
+    position: absolute;
+}
+.deals__description p {
+    font-family: "Caveat", cursive;
+    max-width: 54vw;
+    margin: 0 auto;
+    font-size: 1.3rem;
+}
+
+.deals__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.item {
+    text-align: center;
+}
+.item__title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+.item__desc {
+    display: block;
+    font-family: "Caveat", cursive;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Banner3 */
+#banner3{
+    background: url('./images/spl_day_banner.jpg')  top right no-repeat;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+}
+.banner > h3 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 3.5rem;
+    font-family: "Caveat", cursive;
+}
+.banner > h3::before{
+    content: '';
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c39c5b;
+    left:0;
+    bottom:-16px;
+    position: absolute;
+}
+.banner > h3::after{
+    content: '';
+    width:10vw;
+    height: 1px;
+    background-color: #c39c5b;
+    left:0;
+    bottom:-12px;
+    position: absolute;
+}
+.banner > p {
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    max-width: 33vw;
+}
+.bannerButton{
+    position: absolute;
+    top:67%;
+    left:10%;
+}
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+#footer > a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #c39c5b;
+    transform: rotate(45deg);
+    margin: 0 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #c39c5b;
+}
+#footer > a:hover {
+    color:#000;
+    border-color:#000;
+}
+#footer > a > i {
+    transform: rotate(-45deg);
+}
